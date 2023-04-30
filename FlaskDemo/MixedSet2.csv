@@ -1,0 +1,17 @@
+symptomA_Car exhaust smoke,symptomA_High engine temperature,symptomA_The car shakes,symptomB_After a long drive,symptomB_Hot weather,symptomB_The brake pedal is shaking,symptomB_The steering wheel shakes,symptomB_The whole car shakes,symptomB_black smoke,symptomB_white smoke,symptomC_Air conditioner is off most of the time,symptomC_It happens during acceleration,symptomC_It happens while braking,symptomC_It happens while driving at a certain speed,symptomC_It only happens under heavy braking and there is no vibration from the front end,symptomC_The air conditioner is on most of the time,symptomC_The braking also has vibrations from the front,symptomC_The smoke comes out during startup and then stops,symptomC_The smoke comes out of the exhaust when starting and then stops,symptomC_The smoke comes out of the exhaust while driving,symptomC_The smoke comes out of the exhaust while driving and stops after the engine has warmed up,symptomC_The smoke comes out of the exhaust while driving even after the engine has warmed up,symptomC_cold weather,symptomC_low coolant level warning light is on,symptomC_no low coolant level warning light is on,problem
+0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,Lack of coolant
+0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,The cooling system is clogged - it needs to be cleaned
+0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,check the ventilation unit
+0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,The alternator belt may be slipping or the fan clutch may be damaged
+1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,Check if the air filter is clean. If so then check the fuel injection sensor
+1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,The engine sensor may be faulty
+1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,A new head gasket may be needed
+1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,This is a normal situation
+1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,This is a normal situation
+1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,The engine sensor may be damaged
+0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,Matching problem between the brake pads and the front discs
+0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Check for a vacuum leak or moisture in the distributor cap (distributor)
+0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Check the balance of the four wheels
+0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Matching problem between the brake pads and the front discs
+0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,This is a normal situation. The anti lock system pulsates the brakes
+0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,Matching problem between the brake pads and the front discs

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'home_screen.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -10,7 +11,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   final GlobalKey<AnimatedListState> _ListKey = GlobalKey();
-  List<String> _data = []; 
+  List<String> _data = [];
   String url = '';
   var data;
   String output = 'Initial Output';
@@ -32,7 +33,7 @@ class _HomeState extends State<Home> {
               initialCameraPosition:
                   CameraPosition(target: sourceLocation, zoom: 13.5),
             ),
-           /*  AnimatedList(
+            /*  AnimatedList(
               key: _ListKey,
               initialItemCount: _data.length,
               itemBuilder: (BuildContext context, int index, Animation animation) {
@@ -41,16 +42,21 @@ class _HomeState extends State<Home> {
               
             ), */
             Align(
-                  alignment: Alignment.bottomLeft,
-                  child: SizedBox(
-                      height: 70, //height of button
-                      width: 80,
-                      child: FloatingActionButton(
-                        child: const Icon(Icons.chat),
-                        onPressed: () {
-                          openDialog();
-                        },
-                      ))),
+                alignment: Alignment.bottomLeft,
+                child: SizedBox(
+                    height: 70, //height of button
+                    width: 80,
+                    child: FloatingActionButton(
+                      child: const Icon(Icons.chat),
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => HomeScreen(),
+                            ));
+                        ;
+                      },
+                    ))),
           ],
         ));
   }
@@ -66,11 +72,13 @@ class _HomeState extends State<Home> {
           title: Text('iRepair ChatBot'),
           content: TextField(
             decoration: InputDecoration(
-              icon: Icon( Icons.arrow_forward_sharp,
-                color: Colors.green,),
-              hintText: 'Hello!'),
+                icon: Icon(
+                  Icons.arrow_forward_sharp,
+                  color: Colors.green,
+                ),
+                hintText: 'Hello!'),
           ),
-         /*  actions: [
+          /*  actions: [
             TextButton(
               child: const Icon(
                 Icons.arrow_forward_sharp,
